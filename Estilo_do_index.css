@@ -450,16 +450,45 @@ body::before {
     mix-blend-mode: multiply;
     filter: contrast(1.2) brightness(1.1) saturate(1.1);
 }
-.zaplogo{
-    text-align: center;
+/*/////////// só as logo/////////////*/
+
+.Plataformas {  
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
 }
-.zaplogo-img {
-    width: 20vw;
-    max-width: 80px;
+.plataformas img {
+    width: 60px;  /* Tamanho fixo para todas as logos */
+    height: 60px; /* Altura fixa também */
+    object-fit: contain; /* Mantém proporção sem distorcer */
+}
+.plataformas img:hover {
+    transform: scale(1.1);
+}
+
+.discordlogo-img {
+    width: 80px;  /* Tamanho menor para o Discord */
+    height: 80px;
+    object-fit: contain;
+}
+.steamlogo-img {
+    width: 80px;  /* Tamanho menor para o Discord */
+    height: 80px;
+    object-fit: contain;
+}
+.zaplogo-img 
+{
+    width: 50vw;
+    max-width: 100px;
     min-width: 40px;
     
     height: auto;
 }
+
+/*/////////// só as logo/////////////*/
 .flex-center {
     display: flex;
     justify-content: center;
